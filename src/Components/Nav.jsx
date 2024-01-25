@@ -59,7 +59,6 @@ function MasterOrNot() {
             return(
                 <ul className='nav-links'>
                     <li className='blogs-nav'><Link className="link-blogs-nav" to="blogs">blogs</Link></li>
-                    <li className='gallery-nav'><Link className="link-gallery-nav" to="gallery">gallery</Link></li>
                     <li className='whoami-nav'> <Link className="link-whoami-nav" to="whoami">whoami</Link></li>
                     <li className="blog-create-nav"><Link className='link-blog-create-nav' to="write">write</Link></li>
                 </ul>
@@ -68,7 +67,6 @@ function MasterOrNot() {
             return(
                 <ul className='nav-links'>
                     <li className='blogs-nav'><Link className="link-blogs-nav" to="blogs">blogs</Link></li>
-                    <li className='gallery-nav'><Link className="link-gallery-nav" to="gallery">gallery</Link></li>
                     <li className='whoami-nav'> <Link className="link-whoami-nav" to="whoami">whoami</Link></li>
                 </ul>
             )
@@ -77,7 +75,6 @@ function MasterOrNot() {
         return(
             <ul className='nav-links'>
                 <li className='blogs-nav'><Link className="link-blogs-nav" to="blogs">blogs</Link></li>
-                <li className='gallery-nav'><Link className="link-gallery-nav" to="gallery">gallery</Link></li>
                 <li className='whoami-nav'> <Link className="link-whoami-nav" to="whoami">whoami</Link></li>
             </ul>
         )

@@ -9,6 +9,8 @@ import './index.css'
 import Write from './Components/Write.jsx'
 import BlogGet from './Components/BlogsGet.jsx'
 import Blogs from './Components/Blogs.jsx'
+import Whoami from './Components/Whoami.jsx'
+
   const router = createBrowserRouter([
     {
       path:'/',
@@ -17,8 +19,7 @@ import Blogs from './Components/Blogs.jsx'
       children: [
         {index:true, element: <Hero/>},
         {path:"blogs", element: <BlogGet/>},
-        {path:"whoami" , element: <h1>Galler</h1>},
-        {path:"gallery", element: <h1>whoami</h1>},
+        {path:"whoami" , element: <Whoami/>},
         {path: "write", element: <Write/>,errorElement: <h1>Error</h1>},
         {path:"blog/:id" , element: <Blogs/>, errorElement: <h1>Error</h1>}
         

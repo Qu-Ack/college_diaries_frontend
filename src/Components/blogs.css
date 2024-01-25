@@ -61,3 +61,11 @@
     color: black;
     width: 100vw;
 }
+
+.comments-denied {
+    font-family: var(--main-text-font);
+    color:var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
