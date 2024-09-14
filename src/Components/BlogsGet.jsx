@@ -13,7 +13,7 @@ function BlogGet() {
         const makereq = async () => {
             try {
                 setLoading(true)
-                const response = await axios.get("http://collegediaries-production-1816.up.railway.app/api/blog");
+                const response = await axios.get("https://collegediaries-production-1816.up.railway.app/api/blog");
                 const app = response.data.blogs;
                 setLoading(false);
                 setBlogs(app);

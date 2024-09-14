@@ -24,7 +24,7 @@ function Write() {
         };
         try {
             setLoading(true)
-            const response = await axios.post("http://collegediaries-production-1816.up.railway.app/api/blog", {
+            const response = await axios.post("https://collegediaries-production-1816.up.railway.app/api/blog", {
                 heading,
                 text,
                 author
