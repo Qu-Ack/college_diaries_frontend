@@ -15,7 +15,7 @@ function Comments({ id }) {
         e.preventDefault();
         setChangeComment(!changecomment);
         const user = jwtDecode(localStorage.token);
-        const response = await axios.post(`https://collegediaries-production.up.railway.app/api/blog/${id}`, {
+        const response = await axios.post(`http://collegediaries-production-1816.up.railway.app/api/blog/${id}`, {
             content: comment,
             user: user.symbol,
             blog: id,
@@ -23,7 +23,7 @@ function Comments({ id }) {
 
         try {
             setLoading(true)
-            const response = await axios.get(`https://collegediaries-production.up.railway.app/api/blog/${id}`, {
+            const response = await axios.get(`http://collegediaries-production-1816.up.railway.app/api/blog/${id}`, {
                 headers: myHeaders
             });
             const newComment = response.data.comments[response.data.comments.length - 1]; // Get the last comment from the response
@@ -43,7 +43,7 @@ function Comments({ id }) {
     useEffect(() => {
         const getreq = async () => {
             setLoading(true)
-            const response = await axios.get(`https://collegediaries-production.up.railway.app/api/blog/${id}`, {
+            const response = await axios.get(`http://collegediaries-production-1816.up.railway.app/api/blog/${id}`, {
                 headers: myHeaders
             });
             const bl = response.data.comments

@@ -24,7 +24,7 @@ function Blogs() {
         const getBlog = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get(`https://collegediaries-production.up.railway.app/api/blog/${id}`, {
+                const res = await axios.get(`http://collegediaries-production-1816.up.railway.app/api/blog/${id}`, {
                     headers: myHeaders
                 });
                 const bl = res.data;
